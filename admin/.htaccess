@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# rewrite rule to call actual PHP handler
+
+RewriteRule ^([A-Za-z0-9_]+)/?$ manage-users.php?page=$1 [NC,L]

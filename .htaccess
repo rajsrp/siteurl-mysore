@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# rewrite rule to call actual PHP handler
+RewriteRule ^([A-Za-z0-9-_]+)-to-([A-Za-z0-9-_]+)-taxi/?$ searchroutes.php?pickfrom=$1&dropto=$2 [NC,L]
+RewriteRule ^([A-Za-z0-9-,]+)-to-([A-Za-z0-9-,]+)-taxi/?$ searchroutes.php?pickfrom=$1&dropto=$2 [NC]
+RewriteRule ^([A-Za-z,]+[^&,]+)-to-([A-Za-z,]+[^&,]+)-taxi/?$ searchroutes.php?pickfrom=$1&dropto=$2 [NC]
+RewriteRule ^([0-9-]+)/?$ booknow.php?id=$1 [NC,L]
+RewriteRule ^([A-Za-z0-9-,]+)-to-([A-Za-z0-9-,]+)-([0-9-]+)/?$ booknow.php?pickfrom=$1&dropto=$2&id=$3 [NC,L]
+RewriteRule ^([A-Za-z,]+[^&,]+)-to-([A-Za-z,]+[^&,]+)-([0-9-]+)/?$ booknow.php?pickfrom=$1&dropto=$2&id=$3[NC]
+RewriteRule ^([A-Za-z0-9-_]+)-to-([A-Za-z0-9-_]+)--([0-9-]+)/?$ booknow.php?pickfrom=$1&dropto=$2&id=$3 [NC,L]
