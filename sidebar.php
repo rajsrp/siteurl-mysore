@@ -3,7 +3,7 @@
 <h3 class="w3-center">Contact Us</h3>
  
 <div class="w3-row w3-section">
-  <div class="w3-col" style="width:50px"><i class="w3-xlarge fa fa-user"></i></div>
+  <div class="w3-col" style="width:522px"><i class="w3-xlarge fa fa-user"></i></div>
     <div class="w3-rest">
       <input class="w3-input w3-border" name="name" type="text" placeholder="Name" required>
     </div>
