@@ -62,7 +62,7 @@ $error_id = isset($_GET['message']) ? (int)$_GET['message'] : 0;
  
 </header>
 	
-
+/* Learning preview changes */
 <div class="w3-container  w3-padding">
 
 <div class="w3-col l9 s12 ">
